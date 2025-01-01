@@ -8,6 +8,9 @@ export default {
     container: {
       center: true,
       padding: "12px",
+      screens: {
+        xl: "1240px",
+      }
     },
     animation: {
       expandWidth: "expandWidth 300ms ease-in-out",
