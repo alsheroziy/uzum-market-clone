@@ -40,16 +40,18 @@ export const Banner = () => {
 					<>
 						<Arrow
 							left
-							onClick={(e) =>
-								e.stopPropagation() || instanceRef.current?.prev()
-							}
+							onClick={(e) => {
+								e.stopPropagation()
+								instanceRef.current?.prev()
+							}}
 							disabled={currentSlide === 0}
 						/>
 
 						<Arrow
-							onClick={(e) =>
-								e.stopPropagation() || instanceRef.current?.next()
-							}
+							onClick={(e) => {
+								e.stopPropagation()
+								instanceRef.current?.next()
+							}}
 							disabled={
 								currentSlide ===
 								instanceRef.current.track.details.slides.length - 1
@@ -83,7 +85,7 @@ export const Banner = () => {
 function Arrow(props: {
 	disabled: boolean
 	left?: boolean
-	onClick: (e ) => void
+	onClick: (e: React.MouseEvent<SVGSVGElement, MouseEvent>) => void
 }) {
 	const disabled = props.disabled ? ' arrow--disabled' : ''
 	return (
