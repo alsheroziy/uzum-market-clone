@@ -1,9 +1,10 @@
+import { Link } from 'react-router-dom'
 import ProductCardFooter from './product-card-footer'
 import ProductRating from './product-rating'
 
 export default function ProductsCard() {
 	return (
-		<div className='max-w-[232px] w-full hover:shadow-lg transition cursor-pointer rounded-xl'>
+		<Link to={'/categories/id'} className='max-w-[232px] w-full hover:shadow-lg transition cursor-pointer rounded-xl'>
 			<div>
 				<img
 					src='https://images.uzum.uz/csrem9bvgbkpg1nmchi0/t_product_540_high.jpg#1735733773440'
@@ -18,6 +19,6 @@ export default function ProductsCard() {
 				<ProductRating />
 				<ProductCardFooter />
 			</div>
-		</div>
+		</Link>
 	)
 }
