@@ -21,19 +21,19 @@ export const AdBanner = () => {
       <div className="navigation-wrapper rounded-xl overflow-hidden mt-4">
         <div ref={sliderRef} className="keen-slider">
           <div className="keen-slider__slide number-slide1">
-            <img src="https://images.uzum.uz/ctmjtklht56qpot8rdb0/main_page_banner.jpg" />
+            <img src="/images/banner1.png" alt="banner" />
           </div>
           <div className="keen-slider__slide number-slide2">
-            <img src="https://images.uzum.uz/ctemhb45j42dmkoiqbt0/main_page_banner.jpg" />
+            <img src="/images/banner2.png" />
           </div>
           <div className="keen-slider__slide number-slide3">
-            <img src="https://images.uzum.uz/ctc8aaniub3d1eolivlg/main_page_banner.jpg" />
+            <img src="/images/banner3.png" />
           </div>
           <div className="keen-slider__slide number-slide4">
-            <img src="https://images.uzum.uz/ct8qj97iub3d1eokidng/main_page_banner.jpg" />
+            <img src="/images/banner4.png" />
           </div>
           <div className="keen-slider__slide number-slide3">
-            <img src="https://images.uzum.uz/ctc8aaniub3d1eolivlg/main_page_banner.jpg" />
+            <img src="/images/banner2.png" />
           </div>
           <div className="keen-slider__slide number-slide5">
           </div>

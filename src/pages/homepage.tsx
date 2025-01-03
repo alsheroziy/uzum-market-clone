@@ -21,7 +21,7 @@ export const Homepage = () => {
       <AdBanner />
       <CategoryProducts link="/" products={pupularProducts} title="Mashxur" />
       <Banner
-        src="https://images.uzum.uz/ct8qhktpb7f7ago79st0/main_page_banner.jpg"
+        src="/images/banner2.png"
         link="/"
       />
       <CategoryProducts link="/" products={pupularProducts} title="Mashxur" />
