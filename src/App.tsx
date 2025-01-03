@@ -1,22 +1,17 @@
-import {AddBanner} from './components/ad-banner/banner'
-import Banner from './components/banner/banner'
-import Header from './components/header/header'
-import NavCategories from './components/nav-categories/nav-categories'
-import Products from './components/products/products'
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import { Homepage } from "./pages/homepage";
+import { ProductPage } from "./pages/product-page";
+import { CartPage } from "./pages/cart-page";
 
-export default function App() {
-	return (
-		<div className='container'>
-			<Header />
-			<NavCategories />
-			<AddBanner />
-			<Products />
-			<Banner src='https://images.uzum.uz/ct8qhktpb7f7ago79st0/main_page_banner.jpg' link='/' />
-			<Products />
-			<Banner src='https://images.uzum.uz/ct8qhktpb7f7ago79st0/main_page_banner.jpg' link='/' />
-			<Products />
-			<Banner src='https://images.uzum.uz/ct8qhktpb7f7ago79st0/main_page_banner.jpg' link='/' />
-			<Products />
-		</div>
-	)
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Homepage />} />
+      <Route path="/product/:productId" element={<ProductPage />} />
+      <Route path="/cart" element={<CartPage />} />
+    </Routes>
+  );
 }
+
+export default App;
