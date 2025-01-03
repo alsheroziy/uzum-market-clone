@@ -1,0 +1,9 @@
+{
+	"rewrites": [
+	  {
+		"source": "/images/:path*",
+		"destination": "https://images.uzum.uz/:path*"
+	  }
+	]
+  }
+  
